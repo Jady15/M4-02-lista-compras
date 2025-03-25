@@ -1,0 +1,133 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f5f7fa;
+    margin: 0;
+    padding: 30px;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+h1 {
+    color: #2c3e50;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 40px;
+    font-size: 2.2em;
+    letter-spacing: 0.5px;
+}
+
+.form-compra {
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    padding: 0 150px;
+}
+
+.form-group label {
+    display: block;
+    color: #2c3e50;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1em;
+    color: #34495e;
+    background-color: #fff;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.3);
+}
+
+button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 6px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    display: block;          /* Hacerlo bloque para centrarlo */
+    margin: 0 auto;          /* Centrarlo horizontalmente */
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+.lista-compras {
+    display: grid;
+    gap: 20px;
+}
+
+.producto {
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    border-left: 5px solid #3498db;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.producto:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.producto p {
+    margin: 8px 0;
+    color: #34495e;
+    font-size: 1.1em;
+}
+
+.producto p strong {
+    color: #2980b9;
+    font-weight: 600;
+    margin-right: 8px;
+}
+
+.producto .btn-eliminar {
+    background-color: #e74c3c;
+    padding: 8px 15px;
+    font-size: 0.9em;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.producto .btn-eliminar:hover {
+    background-color: #c0392b;
+}
+
+.total {
+    text-align: right;
+    font-size: 1.2em;
+    color: #2c3e50;
+    margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+    .producto, .form-compra {
+        padding: 20px;
+    }
+    h1 {
+        font-size: 1.8em;
+    }
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>02 - Gestión de Lista de Compras</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Lista de Compras</h1>
+        
+        <form id="form-compra" class="form-compra">
+            <div class="form-group">
+                <label for="nombre">Producto:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="precio">Precio Unitario:</label>
+                <input type="number" id="precio" name="precio" step="0.01" min="0" required>
+            </div>
+            
+            <button type="submit">Agregar Producto</button>
+        </form>
+
+        <div id="lista-compras" class="lista-compras"></div>
+    </div>
+
+    <script type="module" src="app.js"></script>
+</body>
+</html>
